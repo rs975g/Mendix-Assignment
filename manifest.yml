@@ -3,6 +3,6 @@ applications:
 - name: hello
   memory: 512M
   host: hello-mendix
-  buildpack: python-buildpack
+  buildpack: python_buildpack
   command: python hello.py
   instances: 1
