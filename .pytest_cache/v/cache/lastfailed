@@ -1,4 +1,6 @@
 {
+  "first_test.py::MyTest": true, 
+  "first_test.py::TestCase": true, 
   "second_test.py::test_server_is_up_and_running": true, 
   "second_test.py::test_some_endpoint": true, 
   "test_example.py": true, 
