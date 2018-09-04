@@ -1,5 +1,10 @@
-def func(x):
-    return x + 1
+from flask import Flask
+from flask_testing import TestCase
 
-def test_answer():
-    assert func(4) == 5
+class MyTest(TestCase):
+
+    def create_app(self):
+
+        app = Flask(__name__)
+        app.config['TESTING'] = True
+        return app
