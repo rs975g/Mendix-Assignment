@@ -1,16 +1,17 @@
 language: python
 python:
 - '3.6'
+
 install:
 - pip install -r requirements.txt
-- pip install Flask-Testing
 - pip install -U pytest
-script: pytest -q --cmdopt=dev
+
+script: pytest
+
 deploy:
   provider: cloudfoundry
   username: ravi218@gmail.com
-  password:
-    secure: zO1TthS9HjIp6ec0L070jd1aBQqFjZ5eF7Q7xREbg3o6CjDkqE2a3afzzR54cmF/zZ9Bcy9Pa4GQ7x/zbo9e7+y5kLlu50Syg9vvKJTczyEz3LofZ5sPoANkdN8WfTE1fxCHh5z5gppTtxhcDfhJaCzXByud9K7RTNj5RVtkkYrSwURDwz4Y3X40ugxPA0I2jMkAFZo2XfvL8woCV0bSackBSe6yGyVA7W255SMqwmMXOz05hPreEAPaUiG64yJ2LL3BBhFN4Izv8bsffnw6kG/6PndVJ8gvfqAEbwiyJh7+4zYl7lPYvvrgzgpVxzmoxvPZqvLP8dWK/7AMoN7fSvjw1Do7Dq2SVrh99CiQM+rtaY+rSt8+2d/IGBwG/B8SEFUfcwHKLrMS8y73/L0Vjur/FY7gyr96gIfkvflGVB17cfwTlcIS2arUfG/ScFKNzrxNTUY8JgDGA87NoXC6oKyuT+UfV9AfVIz9phSEYXnJWUkx5BN8SG7D3uTenv6wq02NMYxp6BcPkOcznePmIOnRFeXrK9LUjikcr5T1dhqaDDmu2pabTjBavuzlQL7J1H5HZn9MtGIbzg0yjLNy5M6PMP8f/SvEfFON62RWE/rMzt/XQGLNJeLZV7CazN9pvL37LKft4hx/sFdFkahzMkeodRSzmvhRcrIoLjyK+Wc=
+  password: Year@2016
   api: https://api.run.pivotal.io
   organization: ravi218
   space: development

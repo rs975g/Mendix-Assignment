@@ -1,7 +1,0 @@
-{
-  "second_test.py::test_server_is_up_and_running": true, 
-  "second_test.py::test_some_endpoint": true, 
-  "test_example.py": true, 
-  "test_example.py::test_route": true, 
-  "test_second.py": true
-}
