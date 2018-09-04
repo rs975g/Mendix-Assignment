@@ -1,0 +1,4 @@
+[
+  "first_test.py::test_answer", 
+  "second_test.py::test_server_is_up_and_running"
+]
